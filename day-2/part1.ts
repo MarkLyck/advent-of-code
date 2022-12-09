@@ -32,7 +32,7 @@ const fight = (hand1, hand2) => {
   return "loss";
 };
 
-const getHighestCaloryCount = (_err, data) => {
+const getTotalScore = (_err, data) => {
   let totalScore = 0;
 
   data.split("\n").forEach((value) => {
@@ -48,4 +48,4 @@ const getHighestCaloryCount = (_err, data) => {
   console.log("🔈 ~ totalScore", totalScore);
 };
 
-fs.readFile("./input.txt", "utf8", getHighestCaloryCount);
+fs.readFile("./input.txt", "utf8", getTotalScore);
